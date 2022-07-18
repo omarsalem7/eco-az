@@ -1,72 +1,65 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Ecommerce
 
 > Description the project.
-
 
 ## Built With
 
 - Major languages
-- Frameworks
-- Technologies used
 
-## Live Demo (if available)
+  ```bash
+  - (HTML, CSS, JavaScript)
+  ```
 
-[Live Demo Link](https://livedemo.com)
+  - Technologies/ Tools used
 
+  ```bash
+  - Git(version control)
+  ```
+
+## Live Demo
+
+[Live Demo Link](https://omarsalem7.github.io/Portfolio/)
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+- A text editor(preferably Visual Studio Code)
 
 ### Install
 
+- [Git](https://git-scm.com/downloads)
+
 ### Usage
 
-### Run tests
+#### Clone this repository
 
-### Deployment
+```bash
+$ git clone https://github.com/omarsalem7/eco-az.git
+$ cd Portfolio
+```
 
+#### Run project
 
+```bash
+- Open index.html in browser
+```
 
 ## Authors
 
-👤 **Author1**
+👤 **Omar Salem**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+- GitHub: [Omar Salem](https://github.com/omarsalem7)
+- Twitter: [Omar Salem](https://twitter.com/Omar80491499)
+- LinkedIn: [Omar Salem](https://www.linkedin.com/in/omar-salem-a6945b177/)
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
