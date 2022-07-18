@@ -19,13 +19,14 @@ body {
 }
 
 .collections-container {
-  padding: var(--space) 0;
+  padding-top: var(--space);
 }
 
-.new-arrival {
+.collections-item {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: var(--pad);
   border-radius: var(--radius);
+  margin-bottom: var(--space);
 }
 
 .products {
