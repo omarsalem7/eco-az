@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap");
 :root {
   --orange: #fe9c01;
-  --pad: 15px;
+  --pad: 20px;
   --marg: 15px;
+  --space: 5vh;
+  --fs: 16px;
+  --radius: 10px;
 }
 
 body {
@@ -15,6 +18,32 @@ body {
   padding: 0;
 }
 
-.product-item {
+.collections-container {
+  padding: var(--space) 0;
+}
+
+.new-arrival {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: var(--pad);
+  border-radius: var(--radius);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3%;
+}
+
+.product-item {
+  background-color: #f2f2f2;
+  padding: var(--pad);
+  border-radius: var(--radius);
+  font-size: var(--fs);
+}
+
+.product-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
