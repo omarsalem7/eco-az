@@ -20,7 +20,8 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/omarsalem7/eco-az/master/pages/home.html)
+[Home Live Demo](https://raw.githack.com/omarsalem7/eco-az/master/pages/home.html)
+[Categories Live Demo](https://raw.githack.com/omarsalem7/eco-az/master/pages/categories.html)
 
 ## Getting Started
 
