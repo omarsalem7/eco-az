@@ -2,7 +2,7 @@
 
 # Ecommerce
 
-> Description the project.
+> Ecommerce project.
 
 ## Built With
 
