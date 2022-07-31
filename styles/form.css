@@ -30,15 +30,16 @@ form {
   border-radius: 7px;
   padding: 3% 1%;
   position: fixed;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -55%);
+  min-width: 330px;
 }
 
 .form-title {
   border-bottom: 3px solid var(--dark);
   padding-bottom: 10px;
-  width: 60px;
+  width: fit-content;
 }
 
 .btn-submit {
@@ -46,9 +47,51 @@ form {
   color: #fff !important;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
+/* *************Sign Up************ */
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+}
+
+input.invalid {
+  background-color: #ffdddd;
+}
+
+.tab {
+  display: none;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #04aa6d;
+}
+
 /* Mobile version adjusment */
 @media screen and (max-width: 990px) {
   form {
-    width: 70%;
+    top: 40%;
+    max-height: 95vh;
+    overflow-y: scroll;
   }
 }

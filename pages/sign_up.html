@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/form.css" />
+    <title>Sign up</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <form id="regForm" action="/action_page.php">
+        <div class="form-floating mb-2 form-control-sm">
+          <h5 class="fw-bold form-title">Sign Up</h5>
+        </div>
+        <div class="tab">
+          <div class="form-floating mb-3 form-control-sm">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="First Name"
+            />
+            <label for="floatingInput">First Name</label>
+          </div>
+          <div class="form-floating mb-3 form-control-sm">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Last Name"
+            />
+            <label for="floatingInput">Last Name</label>
+          </div>
+          <div class="form-floating mb-3 form-control-sm">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Phone Number"
+            />
+            <label for="floatingInput">Phone Number</label>
+          </div>
+          <div class="form-floating mb-3 form-control-sm">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Area"
+            />
+            <label for="floatingInput">Area</label>
+          </div>
+        </div>
+        <div class="tab">
+          <div class="form-floating mb-3 form-control-sm">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="City"
+            />
+            <label for="floatingInput">City</label>
+          </div>
+          <div class="form-floating mb-3 form-control-sm">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Country"
+            />
+            <label for="floatingInput">Country</label>
+          </div>
+          <div class="form-floating mb-3 form-control-sm">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Password..."
+            />
+            <label for="floatingInput">Password</label>
+          </div>
+          <div class="form-floating mb-3 form-control-sm">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Confirm Password ..."
+            />
+            <label for="floatingInput">Confirm Password</label>
+          </div>
+        </div>
+
+        <div class="d-grid gap-2 form-floating pt-3 form-control-sm">
+          <button
+            class="btn btn-submit"
+            id="nextBtn"
+            onclick="nextPrev(1)"
+            type="button"
+          >
+            Next
+          </button>
+        </div>
+        <div style="text-align: center; margin-top: 40px">
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      var currentTab = 0;
+      showTab(currentTab);
+
+      function showTab(n) {
+        var x = document.getElementsByClassName('tab');
+        x[n].style.display = 'block';
+        if (n == x.length - 1) {
+          document.getElementById('nextBtn').innerHTML = 'Submit';
+        } else {
+          document.getElementById('nextBtn').innerHTML = 'Next';
+        }
+        fixStepIndicator(n);
+      }
+
+      function nextPrev(n) {
+        var x = document.getElementsByClassName('tab');
+        if (n == 1 && !validateForm()) return false;
+        x[currentTab].style.display = 'none';
+        currentTab = currentTab + n;
+        if (currentTab >= x.length) {
+          document.getElementById('regForm').submit();
+          return false;
+        }
+        showTab(currentTab);
+      }
+
+      function validateForm() {
+        var x,
+          y,
+          i,
+          valid = true;
+        x = document.getElementsByClassName('tab');
+        y = x[currentTab].getElementsByTagName('input');
+        for (i = 0; i < y.length; i++) {
+          if (y[i].value == '') {
+            y[i].className += ' invalid';
+            valid = false;
+          }
+        }
+        if (valid) {
+          document.getElementsByClassName('step')[currentTab].className +=
+            ' finish';
+        }
+        return valid;
+      }
+
+      function fixStepIndicator(n) {
+        var i,
+          x = document.getElementsByClassName('step');
+        for (i = 0; i < x.length; i++) {
+          x[i].className = x[i].className.replace(' active', '');
+        }
+        x[n].className += ' active';
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
