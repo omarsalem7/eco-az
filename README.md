@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Ecommerce
+# Ecommerce 
 
-> Ecommerce project.
+> Ecommerce project
 
 ## Built With
 
