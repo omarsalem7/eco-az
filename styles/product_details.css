@@ -81,6 +81,18 @@ body {
   padding: 30px;
 }
 
+.btn-review {
+  /* width: 10%; */
+  padding: 10px 25px;
+  height: 50px;
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
 .review-card {
   margin: 10px 0;
   padding: var(--marg);
@@ -95,5 +107,13 @@ body {
     -ms-flex: 0 0 100%;
     flex: auto;
     max-width: 100%;
+  }
+
+  .add-review {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-review {
+    margin-top: 20px;
   }
 }
