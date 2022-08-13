@@ -24,6 +24,7 @@
 - [Categories Live Demo](https://raw.githack.com/omarsalem7/eco-az/master/pages/categories.html)
 - [Sign In Demo](https://raw.githack.com/omarsalem7/eco-az/master/pages/sign_in.html)
 - [Sign Up Demo](https://raw.githack.com/omarsalem7/eco-az/master/pages/sign_up.html)
+- [Products Demo](https://raw.githack.com/omarsalem7/eco-az/master/pages/products.html)
 
 ## Getting Started
 
