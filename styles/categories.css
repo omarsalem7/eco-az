@@ -38,7 +38,7 @@ body {
 
 .product-item {
   background-color: #f2f2f2;
-  padding: var(--pad);
+  padding-top: var(--pad);
   margin: var(--marg);
   border-radius: var(--radius);
   font-size: var(--fs);
