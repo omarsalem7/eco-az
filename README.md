@@ -2,7 +2,7 @@
 
 # Ecommerce
 
-> Ecommerce project
+> Ecommerce project 
 
 ## Built With
 
